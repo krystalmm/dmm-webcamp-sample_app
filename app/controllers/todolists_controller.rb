@@ -14,10 +14,10 @@ class TodolistsController < ApplicationController
   end
   
   
-  privete
+  private
     
     # ストロングパラメータ
     def list_params
-      params.require(:list).permit(:title, :)
+      params.require(:list).permit(:title, :body)
     end
 end
