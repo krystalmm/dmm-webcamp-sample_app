@@ -9,5 +9,8 @@ Rails.application.routes.draw do
   
   # as :'todolist' は名前付きルート！
   get 'todolists/:id' => 'todolists#show', as: 'todolist'
+  
+  get 'todolists/:id/edit' => 'todolists#edit', as: 'edit_todolist'
+  
 end
 
