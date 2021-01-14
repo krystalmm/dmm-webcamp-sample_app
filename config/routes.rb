@@ -6,5 +6,8 @@ Rails.application.routes.draw do
   post 'todolists' => 'todolists#create'
   
   get 'todolists' => 'todolists#index'
+  
+  # as :'todolist' は名前付きルート！
+  get 'todolists/:id' => 'todolists#show', as: 'todolist'
 end
 
