@@ -1,11 +1,22 @@
-<h1>新規投稿</h1>
-<!-- form_with -->
+<% provide(:title, "New List") %>
+
 <%= form_with model: @list, url: '/todolists', local: true do |f| %>
-  <h4>タイトル</h4>
-  <%= f.text_field :title %>
-  <h4>本文</h4>
-  <%= f.text_area :body %>
-  <h4>画像</h4>
-  <%= f.attachment_field :image %>
-  <%= f.submit '投稿' %>
+  <div class="form">
+    <div class="form-style">
+      <h4 class="form-head">Title</h4>
+      <%= f.text_field :title %>
+    
+      <h4 class="form-head">Body</h4>
+      <%= f.text_area :body %>
+    
+      <div class="form-image">
+        <h4 class-"form-head">Image</h4>
+        <%= f.attachment_field :image %>  
+      </div>
+    
+      <div class="form-submit form-style">
+        <%= f.submit 'Post' %>
+      </div>
+    </div>
+  </div>
 <% end %>

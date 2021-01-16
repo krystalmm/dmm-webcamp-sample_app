@@ -20,7 +20,7 @@
   box-sizing: border-box;
 }
 
-header, h1, nav, .list-comment {
+header, h1, h2, p, nav, .list-comment, .form {
   font-family: 'Kaushan Script', cursive, sans-serif;
 }
 
@@ -94,4 +94,56 @@ main {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.list-show {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.list-show h2 {
+  margin-bottom: 10px;
+}
+
+.link {
+  width: 50%;
+  margin: 0 auto;
+  font-family: 'Kaushan Script', cursive, sans-serif;
+}
+
+.form-style {
+  width: 400px;
+  margin: 20px  auto 0 ;
+}
+
+.form-head {
+  padding-left: 10px;
+}
+
+.form-image h4 {
+  padding: 0 0 5px 10px ;
+}
+
+
+
+#list_title {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#list_body {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#list_image {
+  width: 100%;
+}
+
+.form-submit input {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
 }
