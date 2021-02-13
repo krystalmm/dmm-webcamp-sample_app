@@ -3,4 +3,3 @@ class List < ApplicationRecord
   # カラム名はimage_idだが、ここでは_idはつけない！！
   attachment :image
 end
-
